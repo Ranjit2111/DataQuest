@@ -1,0 +1,8 @@
+We split the dataset into two sets.
+The first set contained the part of the dataframe which had known target values i.e 0,1.
+The second set contained the part where the target values were unknown.
+Logistic regression was used on first set of data to predict the target values and achieved 88 percent accuracy.
+Then we used this trained model to predict the values of the target column in the second set. 
+After this, we managed to convert the id columns entries which were of the form 'img-[116,23]' to 116,23. We intended to use this as the coordinates for a scatter plot.
+
+We used folium to map the coordinates given and showed the different classes using different colors. ie Blue for 0 and Red for 1. 
